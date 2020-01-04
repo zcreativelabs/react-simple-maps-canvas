@@ -5,13 +5,13 @@ import bbox from "@turf/bbox"
 import booleanPointInPolygon from "@turf/boolean-point-in-polygon"
 import Flatbush from "flatbush"
 
+import MapContext from "./MapContext"
+
 const Geographies = ({ geography, children }) => {
   const { mapRef, width, height, dpi, x, y, projection } = useContext(MapContext)
   const [geographies, setGeographies] = useState([])
   const [highlighted, setHighlighted] = useState(null)
   const indexRef = useRef()
-
-  import MapContext from "./MapContext"
   
   useEffect(() => {
     if (!indexRef.current) return
