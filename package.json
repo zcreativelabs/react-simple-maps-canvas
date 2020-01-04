@@ -1,5 +1,5 @@
 {
-  "name": "react-mapchart",
+  "name": "react-simple-maps-canvas",
   "version": "0.0.1",
   "description": "Declarative canvas mapcharts for react.",
   "main": "dist/index.js",
