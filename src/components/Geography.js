@@ -1,6 +1,8 @@
 
 import { useContext, useEffect } from "react"
 
+import MapContext from "./MapContext"
+
 const Geography = ({ geography, fill }) => {
   const { path, dpi, mapRef } = useContext(MapContext)
 

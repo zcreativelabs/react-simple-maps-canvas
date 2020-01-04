@@ -1,9 +1,9 @@
 
-import React, { createContext, useRef, useState } from "react"
+import React, { useRef, useState } from "react"
 import { geoPath, geoEqualEarth } from "d3-geo"
 import useMeasure from "react-use-measure"
 
-const MapContext = createContext()
+import MapContext from "./MapContext"
 
 const CanvasMap = ({ width = 800, height = 600, children }) => {
   const [xy, setxy] = useState([0, 0])

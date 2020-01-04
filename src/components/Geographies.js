@@ -11,6 +11,8 @@ const Geographies = ({ geography, children }) => {
   const [highlighted, setHighlighted] = useState(null)
   const indexRef = useRef()
 
+  import MapContext from "./MapContext"
+  
   useEffect(() => {
     if (!indexRef.current) return
     const [x1, y1] = projection.invert([x, y])
