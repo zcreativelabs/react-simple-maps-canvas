@@ -1,0 +1,44 @@
+{
+  "name": "react-mapchart",
+  "version": "0.0.1",
+  "description": "Declarative canvas mapcharts for react.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "prepare": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babelrc-rollup": "^3.0.0",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "d3-geo": "^1.11.6",
+    "topojson-client": "^3.0.0",
+    "@turf/bbox": "^6.0.1",
+    "@turf/boolean-point-in-polygon": "^6.0.1",
+    "flatbush": "^3.1.1",
+    "react-use-measure": "^2.0.0"
+  },
+  "keywords": ["react","canvas","maps","charts","mapchart"],
+  "author": "",
+  "license": "MIT"
+}
